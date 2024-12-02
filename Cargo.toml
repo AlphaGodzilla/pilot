@@ -1,0 +1,15 @@
+[package]
+name = "pilot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.11.5"
+logger = "0.4.0"
+pretty_env_logger = "0.5.0"
+teloxide = {version = "0.13.0", features = ["default","macros", "sqlite-storage-nativetls", "erased"]}
+tokio = { version = "1.41.1", features = ["full"] }
+log = "0.4.22"
+serde = { version = "1.0.215", features = ["derive"] }
+sqlx = { version = "0.7.4", features = ["default", "runtime-tokio-native-tls", "sqlite"] }
+chrono = "0.4.38"
